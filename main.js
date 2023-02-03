@@ -58,6 +58,10 @@ nine.addEventListener("click", ()=>{
     result = parseInt(nine.value);
     display1.value += result;    
 })
+zero.addEventListener("click", ()=>{
+    result = (zero.value);
+    display1.value += result;    
+})
 dot.addEventListener("click", ()=>{
     result = (dot.value);
     display1.value += result;    
@@ -77,4 +81,8 @@ multiply.addEventListener("click", ()=>{
 division.addEventListener("click", ()=>{
     result = (division.value);
     display1.value += result;    
+})
+clear.addEventListener("click", ()=>{
+    result = (0);
+    display1.value = result;    
 })
