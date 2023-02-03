@@ -22,6 +22,9 @@ body {
     width: 19rem;
     height: 3.3rem;
     border: none;
+    color: black;
+    text-align: right;
+    
 }
 h3 {
     text-align: center;
@@ -48,10 +51,6 @@ h6 {
     background-color: rgb(11, 11, 11);
     border: none;
 }
-/* #equality {
-    height: 6rem;
-}
- */
 #zero {
     width: 14.1rem;
     background-color: brown;
@@ -62,7 +61,7 @@ h6 {
     background-color: rgb(143, 62, 62);
     border: none;
 }
-#clear, #addMinus, #division, #multiplication, #substraction, #addition, #equality {
+#clear, #addMinus, #division, #multiplication, #subtraction, #addition, #equality {
     color: rgb(198, 82, 11);
     font-size: 20px;
 }
