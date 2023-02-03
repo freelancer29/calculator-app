@@ -83,6 +83,6 @@ division.addEventListener("click", ()=>{
     display1.value += result;    
 })
 clear.addEventListener("click", ()=>{
-    result = (0);
+    result = ("");
     display1.value = result;    
 })
