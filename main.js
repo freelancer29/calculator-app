@@ -1,88 +1,78 @@
 let display1 = document.getElementById("display1");
-let display2 = document.getElementById("display2")
-let one = document.getElementById("one");
-let two = document.getElementById("two");
-let three = document.getElementById("three");
-let four = document.getElementById("four");
-let five = document.getElementById("five");
-let six = document.getElementById("six");
-let seven = document.getElementById("seven");
-let eight = document.getElementById("eight");
-let nine = document.getElementById("nine");
-let equality = document.getElementById("equality");
-let dot = document.getElementById("dot");
-let zero = document.getElementById("zero");
-let subtraction = document.getElementById("subtraction");
-let multiply = document.getElementById("multiplication");
-let division = document.getElementById("division");
-let addition = document.getElementById("addition");
-let clear = document.getElementById("clear");
-let mc = document.getElementById("mc");
-let mplus = document.getElementById("mplus");
-let minus = document.getElementById("minus");
-let mr = document.getElementById("mr");
+let display2 = document.getElementById("display2");
+let date = new Date();
+let hour = date.getHours();
+const minute = date.getMinutes();
+let amPm = document.getElementById("amPm");
+function time() {
+    let h = hour + 12;
+    if (h >= 12) {
+         amPm.innerHTML = "AM"; 
+    } else {
+        amPm.innerHTML = "pm"
+    }
+    document.getElementById("timeDisplay").innerText = h + ":" + minute;
+}
+time();
 
-one.addEventListener("click", ()=>{
-    result = parseInt(one.value);
-    display1.value += result;    
+document.getElementById("one").addEventListener("click", ()=>{
+    display1.value += (document.getElementById("one").value);  
 })
-two.addEventListener("click", ()=>{
-    result = parseInt(two.value);
-    display1.value += result;    
+document.getElementById("addMinus").addEventListener("click", ()=>{
+    display1.value = ("");  
 })
-three.addEventListener("click", ()=>{
-    result = parseInt(three.value);
-    display1.value += result;    
+document.getElementById("two").addEventListener("click", ()=>{
+    display1.value += (document.getElementById("two").value);
 })
-four.addEventListener("click", ()=>{
-    result = parseInt(four.value);
-    display1.value += result;    
+document.getElementById("three").addEventListener("click", ()=>{
+    display1.value += (document.getElementById("three").value);    
 })
-five.addEventListener("click", ()=>{
-    result = parseInt(five.value);
-    display1.value += result;    
+document.getElementById("four").addEventListener("click", ()=>{
+    display1.value += (document.getElementById("four").value);    
 })
-six.addEventListener("click", ()=>{
-    result = parseInt(six.value);
-    display1.value += result;    
+document.getElementById("five").addEventListener("click", ()=>{
+    display1.value += (document.getElementById("five").value); 
 })
-seven.addEventListener("click", ()=>{
-    result = parseInt(seven.value);
-    display1.value += result;    
+document.getElementById("six").addEventListener("click", ()=>{
+    display1.value += (document.getElementById("six").value); 
 })
-eight.addEventListener("click", ()=>{
-    result = parseInt(eight.value);
-    display1.value += result;    
+document.getElementById("seven").addEventListener("click", ()=>{
+    display1.value += (document.getElementById("seven").value);    
 })
-nine.addEventListener("click", ()=>{
-    result = parseInt(nine.value);
-    display1.value += result;    
+document.getElementById("eight").addEventListener("click", ()=>{
+    display1.value += (document.getElementById("eight").value);    
 })
-zero.addEventListener("click", ()=>{
-    result = (zero.value);
-    display1.value += result;    
+document.getElementById("nine").addEventListener("click", ()=>{
+    display1.value += (document.getElementById("nine").value);   
 })
-dot.addEventListener("click", ()=>{
-    result = (dot.value);
-    display1.value += result;    
+document.getElementById("zero").addEventListener("click", ()=>{
+    display1.value += (document.getElementById("zero").value);   
 })
-addition.addEventListener("click", ()=>{
-    result = (addition.value);
-    display1.value += result;    
+document.getElementById("dot").addEventListener("click", ()=>{
+    display1.value += (document.getElementById("dot").value);    
 })
-subtraction.addEventListener("click", ()=>{
-    result = (subtraction.value);
-    display1.value += result;    
+document.getElementById("addition").addEventListener("click", ()=>{
+    display1.value += (document.getElementById("addition").value);   
 })
-multiply.addEventListener("click", ()=>{
-    result = (multiply.value);
-    display1.value += result;    
+document.getElementById("subtraction").addEventListener("click", ()=>{
+    display1.value += (document.getElementById("subtraction").value); 
 })
-division.addEventListener("click", ()=>{
-    result = (division.value);
-    display1.value += result;    
+document.getElementById("multiplication").addEventListener("click", ()=>{
+    display1.value += (document.getElementById("multiplication").value);
 })
-clear.addEventListener("click", ()=>{
-    result = ("");
-    display1.value = result;    
+document.getElementById("division").addEventListener("click", ()=>{
+    display1.value += (document.getElementById("division").value);  
 })
+document.getElementById("clear").addEventListener("click", ()=>{
+    display1.value = ("");
+    display2.value = "";    
+})
+document.getElementById("equality").addEventListener("click", ()=>{
+    if (display1.value == "") {
+        alert("please enter a number to evaluate")
+    } else {
+        display2.value = eval (display1.value);
+    } 
+})
+
+

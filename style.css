@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 body {
     background-color: rgb(227, 50, 189);
     color: white;
@@ -13,10 +12,15 @@ body {
     height: 100vh;
 }
 .container {
+    position: relative;
     max-width: 20rem;
     height: 33.5rem;
     background-color: rgb(19, 13, 13);
     padding: 0 0.5rem;
+}
+.timeContainer {
+    display: flex;
+
 }
 #display1, #display2 {
     width: 19rem;
@@ -24,7 +28,13 @@ body {
     border: none;
     color: black;
     text-align: right;
-    
+}
+#display1 {
+    padding-right: 1rem;
+}
+#display2 {
+    font-size: 50px;
+    padding-right: 1rem;
 }
 h3 {
     text-align: center;
@@ -35,6 +45,13 @@ h6 {
     text-align: center;
     margin-top: 3px;
     margin-bottom: 6px;
+}
+#amPm {
+    position: absolute;
+    font-size: 10px;
+    top: 4px;
+    right: 8rem;
+    font-weight: bold;
 }
 .size {
     width: 4.5rem;
@@ -53,7 +70,7 @@ h6 {
 }
 #zero {
     width: 14.1rem;
-    background-color: brown;
+    background-color: red;
     color: white;
     border: brown;
 } 
@@ -64,4 +81,8 @@ h6 {
 #clear, #addMinus, #division, #multiplication, #subtraction, #addition, #equality {
     color: rgb(198, 82, 11);
     font-size: 20px;
+}
+#clear {
+    background-color: red;
+    color: white;
 }
