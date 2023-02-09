@@ -1,20 +1,5 @@
 let display1 = document.getElementById("display1");
 let display2 = document.getElementById("display2");
-let date = new Date();
-let hour = date.getHours();
-const minute = date.getMinutes();
-let amPm = document.getElementById("amPm");
-function time() {
-    let h = hour + 12;
-    if (h >= 12) {
-         amPm.innerHTML = "AM"; 
-    } else {
-        amPm.innerHTML = "pm"
-    }
-    document.getElementById("timeDisplay").innerText = h + ":" + minute;
-}
-time();
-
 document.getElementById("one").addEventListener("click", ()=>{
     display1.value += (document.getElementById("one").value);  
 })
