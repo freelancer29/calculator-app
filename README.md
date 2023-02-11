@@ -5,11 +5,6 @@
 #### - Addition
 #### - Subtraction 
 
-# How does it work
-##### After doing an operation, make sure to clear the screen
-##### using the "clear" button before carrying out another operation
-##### This is because the calculator is still in progress, but as
-##### i learn further i will be updating it function.
 
 ### The calculator was built using HTML, CSS and Javascript
 
