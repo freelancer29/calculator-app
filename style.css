@@ -70,7 +70,7 @@ h6 {
 }
 #zero {
     width: 14.1rem;
-    background-color: red;
+    background-color: rgb(198, 82, 11);;
     color: white;
     border: brown;
 } 
@@ -83,6 +83,5 @@ h6 {
     font-size: 20px;
 }
 #clear {
-    background-color: red;
-    color: white;
+    color: rgb(198, 82, 11);
 }

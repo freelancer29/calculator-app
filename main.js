@@ -4,7 +4,7 @@ document.getElementById("one").addEventListener("click", ()=>{
     display1.value += (document.getElementById("one").value);  
 })
 document.getElementById("addMinus").addEventListener("click", ()=>{
-    display1.value = ("");  
+    display1.value = display1.value.slice(0, -1) 
 })
 document.getElementById("two").addEventListener("click", ()=>{
     display1.value += (document.getElementById("two").value);
@@ -37,7 +37,7 @@ document.getElementById("dot").addEventListener("click", ()=>{
     display1.value += (document.getElementById("dot").value);    
 })
 document.getElementById("addition").addEventListener("click", ()=>{
-    display1.value += (document.getElementById("addition").value);   
+        display1.value += (document.getElementById("addition").value);
 })
 document.getElementById("subtraction").addEventListener("click", ()=>{
     display1.value += (document.getElementById("subtraction").value); 
@@ -46,18 +46,12 @@ document.getElementById("multiplication").addEventListener("click", ()=>{
     display1.value += (document.getElementById("multiplication").value);
 })
 document.getElementById("division").addEventListener("click", ()=>{
-    display1.value += (document.getElementById("division").value);  
+    display1.value += (document.getElementById("division").value); 
 })
 document.getElementById("clear").addEventListener("click", ()=>{
     display1.value = ("");
     display2.value = "";    
 })
 document.getElementById("equality").addEventListener("click", ()=>{
-    if (display1.value == "") {
-        alert("please enter a number to evaluate")
-    } else {
-        display2.value = eval (display1.value);
-    } 
+    let message = (display1.value == "") ? alert("please enter a number to evaluate") : display2.value = eval (display1.value);
 })
-
-
